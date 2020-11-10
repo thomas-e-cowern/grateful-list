@@ -1,0 +1,19 @@
+{
+  "name": "grateful-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomas-e-cowern/grateful-list.git"
+  },
+  "author": "thomas.e.cowern",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomas-e-cowern/grateful-list/issues"
+  },
+  "homepage": "https://github.com/thomas-e-cowern/grateful-list#readme"
+}
