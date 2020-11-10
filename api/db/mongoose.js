@@ -6,7 +6,7 @@ mongoose.connect('mongodb://localhost:27017/grateful-list', {
   useFindAndModify: true,
   useUnifiedTopology: true
 }).then(() => {
-  console.log('Database grareful-list is connected')
+  console.log('Database grateful-list is connected')
 }).catch((e) => {
   console.log('error:', e)
 })

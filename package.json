@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/thomas-e-cowern/grateful-list#readme",
   "dependencies": {
+    "angular": "^1.8.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.10.13"
+    "mongoose": "^5.10.13",
+    "nodemon": "^2.0.6"
   }
 }
