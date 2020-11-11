@@ -1,12 +1,17 @@
 const express = require('express')
 const router = new express.Router()
+const cors = require('cors')
 
 // import models
 const GratefulItem = require('../db/models/grateful-item')
 
+router.use(express.json())
+router.use(cors())
+
 // Routes
 // Create a list item
 router.post('/greatful-list', (req, res) => {
+  console.log(req.body)
   let name = req.body.name;
   let description = req.body.description;
 
