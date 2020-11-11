@@ -20,4 +20,12 @@ export class WebRequestService {
   post (uri: string, payload: Object) {
     return this.http.post(`${this.ROOT_URL}/${uri}`, payload);
   }
+
+  patch () {
+
+  }
+
+  delete () {
+    
+  }
 }
