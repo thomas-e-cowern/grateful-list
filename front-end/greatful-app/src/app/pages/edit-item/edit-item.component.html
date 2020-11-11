@@ -1,0 +1,27 @@
+<div class="container hero is-medium is-primary is-info">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title center">
+        Edit a good...
+      </h1>
+      <h2 class="subtitle">
+        You can change your entry below into anything you want....
+      </h2>
+      <div class="field">
+        <label class="label">I'm grateful for...</label>
+        <div class="control">
+          <input #nameField class="input" type="text" [value]="greatfulItem.name">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Because...</label>
+        <div class="control">
+          <input #becauseField  class="input" type="text" [value]="greatfulItem.description">
+        </div>
+      </div>
+      <div class="control">
+        <button class="button is-primary" (click)="updateGratefulItem(nameField.value, becauseField.value)">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>

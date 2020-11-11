@@ -13,16 +13,20 @@ export class WebRequestService {
     this.ROOT_URL = 'http://localhost:3000'
   }
 
-  get (uri: string) {
+  getAll (uri: string) {
     return this.http.get(`${this.ROOT_URL}/${uri}`);
+  }
+
+  getOne (uri: string, itemId: string) {
+    return this.http.get(`${this.ROOT_URL}/${uri}/${itemId}`);
   }
 
   post (uri: string, payload: Object) {
     return this.http.post(`${this.ROOT_URL}/${uri}`, payload);
   }
 
-  patch () {
-
+  patch (uri: string, payload: Object) {
+    return this.http.patch(`${this.ROOT_URL}/${uri}`, payload)
   }
 
   delete () {

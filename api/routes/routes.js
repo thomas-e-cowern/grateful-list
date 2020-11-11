@@ -17,10 +17,11 @@ router.post('/greatful-list', (req, res) => {
 
   let gratefulItem = new GratefulItem({
     name: name,
-    desctiption:description
+    description:description
   })
-  gratefulItem.save().then((gratefulList) => {
-    res.send(gratefulList);
+  console.log(gratefulItem)
+  gratefulItem.save().then((gratefulItem) => {
+    res.send(gratefulItem);
   })
 });
 
@@ -30,6 +31,17 @@ router.get('/greatful-list', (req, res) => {
     res.send(items);
   })
 });
+
+// Get a single item
+router.get('/greatful-list/:itemId', (req, res) => {
+  console.log(req.params.itemId)
+  GratefulItem.findById({_id: req.params.itemId})
+  .then((item) => {
+    res.send(item)
+  }).catch((e) => {
+    console.log('error', e)
+  })
+})
 
 // Update an item
 router.patch('/greatful-list/:itemId', (req, res) => {

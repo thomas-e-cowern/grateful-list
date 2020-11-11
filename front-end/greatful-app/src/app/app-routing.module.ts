@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ListViewComponent } from './pages/list-view/list-view.component';
 import { AddItemComponent } from './pages/add-item/add-item.component';
+import { EditItemComponent } from './pages/edit-item/edit-item.component';
 
 const routes : Routes = [
-  { path: 'grateful-list', component: ListViewComponent },
-  { path: 'add-good', component: AddItemComponent }
+  { path: '', component: ListViewComponent },
+  { path: 'add-good', component: AddItemComponent },
+  { path: 'edit-good/:itemId', component: EditItemComponent}
 ];
 
 @NgModule({

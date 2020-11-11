@@ -5,3 +5,20 @@
   padding: 10px;
   text-align: center;
 }
+
+.name {
+  font-size: medium;
+  font-weight: 900;
+}
+
+.grateful-list-item {
+  display: inline;
+}
+
+.button {
+  margin-left: 32px;
+}
+
+.name {
+    align-content: center;
+}

@@ -3,6 +3,23 @@
 </div>
 <div class="grateful-list center">
   <div class="grateful-list-item" *ngFor="let item of gratefulList" >
-    <p>{{ item.name }}</p>
+    <div class="field is-grouped is-grouped-right">
+      <div class="grateful-input">
+        <div>
+          {{ item._id }}
+        </div>
+        <div class="name">
+          <p>{{ item.name }}</p>
+        </div>
+        <div class="descripion">
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+      <p class="control">
+        <a class="button is-primary" [routerLink]="['edit-good', item._id]">
+          Edit
+        </a>
+      </p>
+    </div>
   </div>
 </div>
