@@ -1,3 +1,8 @@
 .container {
   background-color: blue;
+  width: 70%;
+}
+
+.center {
+  text-align: center;
 }
