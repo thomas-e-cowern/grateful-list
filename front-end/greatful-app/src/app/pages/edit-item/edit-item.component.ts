@@ -29,6 +29,7 @@ export class EditItemComponent implements OnInit {
   }
 
   updateGratefulItem (name: string, description: string) {
-    console.log("n:", name, "d:", description)
+    console.log("id:", this.itemId, "name:", name, "desc:", description)
+    this.gratefulListService.updateGratelfulItem(this.itemId, name, description);
   }
 }

@@ -23,8 +23,8 @@ export class GratefulListService {
     return this.webRequestService.post('greatful-list', { name, description })
   }
 
-  updateGratelfulItem (id: string, gratefulItem: GratefulItem) {
-    console.log("GI:", gratefulItem)
-    return this.webRequestService.patch(`greatful-list/${id}`, gratefulItem)
+  updateGratelfulItem (itemId: string, name: string, description: string) {
+    console.log(itemId, name, description)
+    return this.webRequestService.patch(`greatful-item`, itemId, {  name, description })
   }
 }
