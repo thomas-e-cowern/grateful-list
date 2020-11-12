@@ -1,9 +1,21 @@
-<div>
-  <h2>The Greatful List...</h2>
-</div>
+<section class="hero is-primary center">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        The Grateful List
+      </h1>
+      <h2 class="subtitle">
+        A place to track the people, places, experiences and things for which you are grateful.
+      </h2>
+    </div>
+  </div>
+</section>
 <div class="grateful-list center">
   <div class="grateful-list-item" *ngFor="let item of gratefulList" >
     <div class="field is-grouped is-grouped-right">
+      <div class="icon">
+        <img src="../assets/images/001-guarantee.png" alt="">
+      </div>
       <div class="grateful-input">
         <div class="name">
           <p>{{ item.name }}</p>
@@ -25,6 +37,6 @@
     </div>
   </div>
 </div>
-<div class="control">
+<div class="control center">
   <button class="button is-primary" [routerLink]="['add-good']">Add New</button>
 </div>
