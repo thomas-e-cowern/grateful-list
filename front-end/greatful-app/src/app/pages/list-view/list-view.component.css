@@ -15,10 +15,10 @@
   display: inline;
 }
 
-.button {
-  margin-left: 32px;
-}
-
 .name {
     align-content: center;
+}
+
+.grateful-input {
+  margin-right: 16px;
 }

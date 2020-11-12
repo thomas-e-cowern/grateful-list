@@ -24,7 +24,10 @@ export class GratefulListService {
   }
 
   updateGratelfulItem (itemId: string, name: string, description: string) {
-    console.log(itemId, name, description)
-    return this.webRequestService.patch(`greatful-item`, itemId, {  name, description })
+    return this.webRequestService.patch(`greatful-list`, itemId, {  name, description })
+  }
+
+  deleteGratefulItem (itemId: string) {
+    return this.webRequestService.delete('greatful-list', itemId);
   }
 }

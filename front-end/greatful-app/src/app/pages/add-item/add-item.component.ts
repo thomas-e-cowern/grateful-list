@@ -20,7 +20,7 @@ export class AddItemComponent implements OnInit {
     console.log('name', name, 'description', description)
     this.gratefulListService.newGratefulItem( name, description ).subscribe((gratefulItem: GratefulItem) => {
       console.log(gratefulItem)
-      this.router.navigate(['/grateful-list']);
+      this.router.navigate(['/']);
     })
   }
 

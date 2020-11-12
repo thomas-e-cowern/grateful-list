@@ -27,10 +27,14 @@ export class WebRequestService {
 
   patch (uri: string, itemId: string, payload: Object) {
     console.log(`${this.ROOT_URL}/${uri}/${itemId}`,  payload)
-    return this.http.patch(`${this.ROOT_URL}/${uri}`, payload);
+    return this.http.patch(`${this.ROOT_URL}/${uri}/${itemId}`, payload).subscribe();
   }
 
-  delete () {
+  delete (uri: string, itemId: string) {
+    console.log(`${this.ROOT_URL}/${uri}/${itemId}`)
+    return this.http.delete(`${this.ROOT_URL}/${uri}/${itemId}`).subscribe((message) => {
+      console.log(message)
+    })
     
   }
 }

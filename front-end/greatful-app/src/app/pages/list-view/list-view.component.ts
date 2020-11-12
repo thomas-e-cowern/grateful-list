@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { GratefulListService } from 'src/app/grateful-list.service';
 import { WebRequestService} from 'src/app/web-request.service'
 
@@ -11,7 +12,7 @@ export class ListViewComponent implements OnInit {
 
   gratefulList: any[];
 
-  constructor(private gratefulListService: GratefulListService) { }
+  constructor(private gratefulListService: GratefulListService, private router: Router) { }
 
   ngOnInit() {
     console.log('inside ngOnInit list-view com')
@@ -19,6 +20,12 @@ export class ListViewComponent implements OnInit {
       console.log("glist:", gList);
       this.gratefulList = gList;
     })
+  }
+
+  deleteGood (itemId: string) {
+    // console.log(itemId)
+    this.gratefulListService.deleteGratefulItem(itemId);
+    this.gratefulList = this.gratefulList.filter(item => item._id !== itemId)
   }
 
 }
