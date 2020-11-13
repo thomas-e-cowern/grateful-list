@@ -1,6 +1,6 @@
 .center {
   margin: auto;
-  width: 50%;
+  width: 70%;
   border: 3px solid green;
   padding: 10px;
   text-align: center;
@@ -13,6 +13,8 @@
 
 .grateful-list-item {
   display: inline;
+  display: flex;
+  justify-content: center;
 }
 
 .name {
@@ -21,4 +23,17 @@
 
 .grateful-input {
   margin-right: 16px;
+}
+
+.icon {
+  margin-right: 16px;
+}
+
+.img {
+  height: 25px;
+  width: 25px;
+}
+
+table, th, td {
+  border: 5px solid black;
 }
