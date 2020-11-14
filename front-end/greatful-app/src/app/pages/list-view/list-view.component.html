@@ -11,41 +11,14 @@
   </div>
 </section>
 <div class="grateful-list center">
-  <div class="grateful-list-item" *ngFor="let item of gratefulList" >
-    <!-- <table>
-      <tbody>
-        <tr>
-          <td rowspan="2"><img src="../assets/images/001-guarantee.png" alt="" width="50" height="50"></td>
-          <td>{{ item.name }}</td>
-          <td rowspan="2">
-            <p class="control">
-              <a class="button is-primary" [routerLink]="['edit-good', item._id]">
-                Edit
-              </a>
-            </p>
-          </td>
-          <td rowspan="2">
-            <p class="control">
-              <a class="button is-danger" (click)="deleteGood(item._id)">
-               Delete
-              </a>
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>{{ item.description }}</td>
-        </tr>
-      </tbody>
-    
-    </table> -->
-    
+  <div class="grateful-list-item" *ngFor="let item of gratefulList">
     <div class="field is-grouped is-grouped-right">
       <div class="icon">
         <img src="../assets/images/001-guarantee.png" alt="">
       </div>
       <div class="grateful-input">
         <div class="name">
-          <p>{{ item.name }}</p>
+          <a [routerLink]="['/view-item-detail', item._id]"><p>{{ item.name }}</p></a>
         </div>
         <div class="descripion">
           <p>{{ item.description }}</p>
