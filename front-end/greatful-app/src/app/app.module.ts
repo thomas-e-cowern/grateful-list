@@ -10,6 +10,7 @@ import { EditItemComponent } from './pages/edit-item/edit-item.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ViewItemDetailComponent } from './pages/view-item-detail/view-item-detail.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ViewItemDetailComponent } from './pages/view-item-detail/view-item-deta
     EditItemComponent,
     HeaderComponent,
     FooterComponent,
-    ViewItemDetailComponent
+    ViewItemDetailComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
