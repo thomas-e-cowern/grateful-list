@@ -1,20 +1,9 @@
-
-
-.hero {
-  border-radius: 25px;
+.container {
+  background-color: aquamarine;
   width: 70%;
+  height: 70%;
 }
 
-.hero-body {
-  height: 500px;
-}
-
-.button {
-  margin-left: 5px;
-}
-
-.title {
-  margin-top: 0px;
-  margin-bottom: 24px;
+.center {
   text-align: center;
 }
