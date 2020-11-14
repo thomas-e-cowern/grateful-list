@@ -64,3 +64,13 @@
 .info {
   width: 70%;
 }
+
+.hero {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.control {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
