@@ -10,13 +10,13 @@
       <div class="field">
         <label class="label">I'm grateful for...</label>
         <div class="control">
-          <input #nameField class="input" type="text" [value]="greatfulItem.name" >
+          <input id="name" #nameField class="input" type="text"  value="{{ greatfulItem.name }}">
         </div>
       </div>
       <div class="field">
         <label class="label">Because...</label>
         <div class="control">
-          <input #becauseField  class="input" type="text" [value]="greatfulItem.description">
+          <input id="description" #becauseField  class="input" type="text" value="{{ greatfulItem.description }}">
         </div>
       </div>
       <div class="control">

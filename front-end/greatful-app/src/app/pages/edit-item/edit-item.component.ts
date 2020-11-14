@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { GratefulListService } from 'src/app/grateful-list.service';
 import { GratefulItem } from 'src/app/models/item.model';
@@ -29,7 +29,10 @@ export class EditItemComponent implements OnInit {
 
   updateGratefulItem (name: string, description: string) {
     console.log("id:", this.itemId, "name:", name, "desc:", description)
-    this.gratefulListService.updateGratelfulItem(this.itemId, name, description);
-    this.router.navigate(['']);
+    this.gratefulListService.updateGratelfulItem(this.itemId, name, description).subscribe(() => {
+      console.log("update done")
+      this.router.navigate(['/']);
+    });
+    
   }
 }
