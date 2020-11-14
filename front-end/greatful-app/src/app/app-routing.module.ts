@@ -10,7 +10,7 @@ const routes : Routes = [
   { path: '', component: ListViewComponent },
   { path: 'add-good', component: AddItemComponent },
   { path: 'edit-good/:itemId', component: EditItemComponent},
-  { path: 'view-item-detail/:itenId', component: ViewItemDetailComponent}
+  { path: 'view-item-detail/:itemId', component: ViewItemDetailComponent}
 ];
 
 @NgModule({

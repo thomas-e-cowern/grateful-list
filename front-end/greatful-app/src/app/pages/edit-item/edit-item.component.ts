@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { strictEqual } from 'assert';
 import { GratefulListService } from 'src/app/grateful-list.service';
 import { GratefulItem } from 'src/app/models/item.model';
 
