@@ -9,6 +9,7 @@ import { AddItemComponent } from './pages/add-item/add-item.component';
 import { EditItemComponent } from './pages/edit-item/edit-item.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ViewItemDetailComponent } from './pages/view-item-detail/view-item-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AddItemComponent,
     EditItemComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ViewItemDetailComponent
   ],
   imports: [
     BrowserModule,
